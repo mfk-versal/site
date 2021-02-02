@@ -1,0 +1,54 @@
+body {
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size:14px;
+  padding-top: 54px;
+  background-color: #F8F8F8;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.business-header {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.card {
+  height: 100%;
+}
+
+.gif {
+	text-align: center;
+
+display:block; /* Устанавливаем */
+
+color: #000000; /* Заливаем блок статичной картинкой */
+
+}
+
+/* Как видно, начальное (статическое) изображение задано как фон блока с шириной и высотой этого изображения. */
+
+a.gif img {
+
+visibility:hidden; /* Aнимация не была видна в ситуации, когда мышь не наведена */
+
+}
+
+a.gif:hover {
+
+background:none; /* Фон (статичное изображение) не было видно при наведении мыши */
+
+}
+
+a.gif:hover img {
+
+visibility:visible; /* При наведении анимация показывается */
+
+border:0; /* без обрамления ;) */
+
+}
